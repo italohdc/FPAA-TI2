@@ -2,7 +2,7 @@
 
 > **Fundamentos de Programação e Algoritmos Avançados**
 > 
-> Trabalho Individual 1 - Implementação do Algoritmo de Seleção Simultânea do
+> Trabalho Individual 2 - Implementação do Algoritmo de Seleção Simultânea do
 Maior e do Menor Elementos (MaxMin Select) em Python
 
 
@@ -53,7 +53,15 @@ a inserção dos números a serem multiplicados.
 
 ### Rodar o projeto
 
-TODO: Instruções para rodar o projeto
+Para rodar o projeto, você pode utilizar o seguinte comando:
+
+```
+# Comando
+python main.py <NÚMERO_1> <NÚMERO_2> <NÚMERO_3> ... <NÚMERO_N>
+
+# Exemplo
+python main.py 1 9 3 7 50 25 100
+```
 
 
 
