@@ -8,6 +8,20 @@ Simultânea do Maior e do Menor Elementos (MaxMin Select) em Python
 
 ## Descrição do projeto
 
+Este projeto tem como objetivo implementar, e explicar, o
+funcionamento do algoritmo de MaxMin Select.
+
+### Como o algoritmo funciona
+
+O algoritmo de MaxMin Select é um método que utiliza o princípio de
+dividir e conquistar para encontrar simultaneamente o maior e o menor
+elemento em uma lista.
+
+Esse algoritmo dividir a lista em duas metades, de forma recursiva,
+até chegar ao caso base, onde a lista contém apenas um ou dois
+elementos. Em seguida, ele compara os elementos para determinar o
+menor e o maior, e combina os resultados das duas metades para obter
+o menor e o maior da lista original.
 
 ### Explicação do código
 
