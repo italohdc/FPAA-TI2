@@ -2,11 +2,64 @@
 
 > **Fundamentos de Programação e Algoritmos Avançados**
 > 
-> Trabalho Individual 2 - Implementação do Algoritmo de Seleção Simultânea do
-Maior e do Menor Elementos (MaxMin Select) em Python
+> Trabalho Individual 2 - Implementação do Algoritmo de Seleção
+Simultânea do Maior e do Menor Elementos (MaxMin Select) em Python
 
 
 ## Descrição do projeto
+
+
+### Explicação do código
+
+No código, o algoritmo está implementado na função `def ordenar_maxmin_select(numbers: list[int]) -> tuple[int, int]`.
+Essa função recebe uma lista de números inteiros e retorna uma
+tupla contendo o menor e maior elemento utilizando o algoritmo MaxMin Select.
+
+Como trata-se de um código pequeno, foi escolhido deixar todo o
+conteúdo somente no arquivo main.py. Dessa forma, fica mais fácil
+de entender e manter o código.
+
+Abaixo, explico cada passo do código:
+
+`Linha 8`: Casos base
+
+Tratam-se dos casos base do algoritmo. Como trata-se de um algoritmo
+recursivo, é necessário existir casos base para finalizar a recursão.
+
+No primeiro caso base, se há apenas 1 elemento na lista, esse elemento
+é tanto o menor quanto o maior, então retorna uma tupla com o mesmo valor.
+
+No segundo caso base, se há 2 elementos, compara ambos e retorna
+ordenados como (menor, maior).
+
+`Linha 5`: Passo 1
+
+O número de elementos da lista é obtido para determinar como proceder
+com o algoritmo. Essa informação é utilizada para identificar os casos
+base e para dividir a lista posteriormente.
+
+`Linha 19`: Passo 2
+
+A lista é dividida em duas metades utilizando a estratégia de dividir e
+conquistar. A primeira metade contém os elementos do início até a metade,
+e a segunda metade contém os elementos restantes.
+
+`Linha 24`: Passo 3
+
+Os menores e maiores elementos são encontrados recursivamente para cada
+metade da lista. Isso permite que o algoritmo processe sublistas menores
+até chegar aos casos base.
+
+`Linha 28`: Passo 4
+
+Os resultados das duas metades são combinados comparando os valores mínimos
+e máximos encontrados em cada metade. O menor entre os dois mínimos e o
+maior entre os dois máximos são selecionados.
+
+`Linha 32`: Retorno do resultado
+
+O resultado final é retornado como uma tupla contendo o menor e maior
+elemento de toda a lista original.
 
 
 
